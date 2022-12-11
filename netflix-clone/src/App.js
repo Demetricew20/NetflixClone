@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import HomeScreen from './HomeScreen';
+import Login from "./Login";
 import {
   BrowserRouter as Router,
   Routes,
@@ -9,14 +10,20 @@ import {
 } from "react-router-dom";
 
 function App() {
+  const user = null;
+
   return (
     <div className='app'>
       <Router>
         <Routes>
-
-          <Route path="/about" />
-          <Route path="/users" />
-          <Route path="/" element={<HomeScreen />} />               
+          {!user ? (
+            <Route path='/' element={<Login />} />
+          ) : 
+          (
+          // <Route path="/about" element={} />
+          // <Route path="/users" element={} />
+          <Route path="/" element={<HomeScreen />} />                 
+          )}        
         </Routes>
 
       </Router>
