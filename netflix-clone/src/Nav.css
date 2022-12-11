@@ -12,16 +12,16 @@
     transition: all .5s;
 }
 
-.nav_black {
-    background-color: #000;
+.nav__black {
+    background-color: #111;
 }
 
-.nav_contents {
+.nav__contents {
     display: flex;
     justify-content: space-between;
 }
 
-.nav_logo {
+.nav__logo {
     position: fixed;
     top:10px;
     left: 0;
@@ -31,7 +31,7 @@
     object-fit: contain;
 }
 
-.nav_avatar {
+.nav__avatar {
     cursor: pointer;
     position:fixed;
     right:10px;
