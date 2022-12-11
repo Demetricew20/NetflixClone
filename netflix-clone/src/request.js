@@ -7,9 +7,11 @@ const requests = {
     getNetflixOriginals: `/discover/tv?api_key=${API_KEY}&with_networks=213`,    
     getTopRatedMovies: `/movie/top_rated?api_key=${API_KEY}&language=en-US`,
     getActionMovies: `/discover/movie?api_key=${API_KEY}&with_genres=28`,
-    getComedyMovies: `/discover/movie?api_key=${API_KEY}&with_genre=35`,
-    getHorrorMovies: `/discover/movie?api_key=${API_KEY}&with_genre=27`,
-    getRomanceMovies: `/discover/movie?api_key=${API_KEY}&with_genre=10749`,
-    getDocumentaries: `/discover/movie?api_key=${API_KEY}&with_genre=99`,
+    getComedyMovies: `/discover/movie?api_key=${API_KEY}&with_genres=35`,
+    getHorrorMovies: `/discover/movie?api_key=${API_KEY}&with_genres=27`,
+    getRomanceMovies: `/discover/movie?api_key=${API_KEY}&with_genres=10749`,
+    getDocumentaries: `/discover/movie?api_key=${API_KEY}&with_genres=99`,
 
 }
+
+export default requests;

@@ -1,7 +1,6 @@
 .banner {
     height: 448px;
     background-size: cover;
-    background-image: url("https://res.cloudinary.com/practicaldev/image/fetch/s--THrf5Yjw--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/n6brz4p7iq7j1mulo1nv.jpg");
     background-position: center center;
     position:relative;
     color:white;
@@ -51,6 +50,7 @@
 }
 
 .banner--fadeBottom {
+    margin-top: 140px;
     height: 7.4rem;
     background-image: linear-gradient(
         180deg,
