@@ -36,15 +36,17 @@
     background: rgba(0, 0, 0, .4);
     background-image: linear-gradient(
         to top,
-        rgba(0, 0, 0, .8) 0,
+        rgba(0, 0, 0, 0.8) 0,
         rgba(0, 0, 0, 0) 60%,
-        rgba(0, 0, 0, .8) 100%,
+        rgba(0, 0, 0, 0.8) 100%,
     );
 }
 
 .login__body {
     position: absolute;
     top: 30%;
+    left: 0;
+    right: 0;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
