@@ -1,4 +1,4 @@
-import {  createSlice } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     user: null,
@@ -14,7 +14,10 @@ export const userSlice = createSlice({
         },
         logout: (state) => {
             state.user = null;
-        }
+        },
+        // storeImage: (state) => {
+
+        // }
     },
 });
 

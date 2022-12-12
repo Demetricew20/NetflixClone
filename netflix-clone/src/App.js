@@ -10,10 +10,11 @@ import {
 import { auth } from './firebase';
 import { useDispatch, useSelector } from 'react-redux';
 import { logout, login, selectUser } from "./features/userSlice";
+import Profile from './Profile';
 
 function App() {
   const user = useSelector(selectUser);
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(
@@ -26,13 +27,13 @@ function App() {
           }));
         }
         else {
-          dispatch(logout);
+          dispatch(logout());
         }
       }
     );
 
     return unsubscribe;
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className='app'>
@@ -42,10 +43,10 @@ function App() {
             <Route path='/' element={<Login />} />
           ) :
             (
-              <Route path="/profile" element={ <Profile/> } />
-              // <Route path="/users" element={} />
               <Route path="/" element={<HomeScreen />} />
             )}
+          {/* // <Route path="/users" element={} /> */}
+          <Route path="/profile" element={<Profile />} />
         </Routes>
 
       </Router>

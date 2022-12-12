@@ -1,0 +1,10 @@
+.profile {
+    height: 100vh;
+    color: white;
+}
+
+.profile__body {
+    display: flex;
+    flex-direction: column;
+    
+}
