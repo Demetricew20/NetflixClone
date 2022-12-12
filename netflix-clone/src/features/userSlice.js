@@ -1,5 +1,4 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { fetchCount } from "./counter/counterAPI";
+import {  createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     user: null,
@@ -17,21 +16,11 @@ export const userSlice = createSlice({
             state.user = null;
         }
     },
-    extraReducers: (builder) => {
-        builder
-            .addCase(incrementAsync.pending, (state) => {
-                state.status = "loading";
-            })
-            .addCase(incrementAsync.fulfilled, (state, action) => {
-                state.status = "idle";
-                state.value += action.payload;
-            });
-    },
 });
 
 
-export const { login, logout } = (state) = userSlice.actions;
+export const { login, logout } = userSlice.actions;
 // selector returns the data from the slice
-export const selectUser = state => state.user.value;
+export const selectUser = state => state.user.user;
 
 export default userSlice.reducer;

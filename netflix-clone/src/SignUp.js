@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import {auth} from "./firebase";
+import { auth } from "./firebase";
 import "./SignUp.css";
 
 function SignUp() {
@@ -15,11 +15,10 @@ function SignUp() {
       emailRef.current.value,
       passwordRef.current.value
     ).then((authUser) => {
-      console.log("User Created", authUser)
     }).catch(error => {
       alert(error.message);
     })
-    ;
+      ;
   };
 
   const signIn = (e) => {
@@ -29,12 +28,11 @@ function SignUp() {
       emailRef.current.value,
       passwordRef.current.value
     )
-    .then(user => {
-      console.log("User Sign In", user);
-    })
-    .catch(error => {
-      alert(error.message);
-    })
+      .then(user => {
+      })
+      .catch(error => {
+        alert(error.message);
+      })
   };
 
   return (
