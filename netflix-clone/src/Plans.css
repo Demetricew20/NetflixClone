@@ -1,0 +1,23 @@
+.plans__subscriptions {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    opacity: .8;
+}
+
+.plans__subscriptions:hover{
+    opacity: 1;
+}
+
+.plans__subscriptions > button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.plans__subscriptions-disabled > button {
+    background-color: gray !important;
+}
