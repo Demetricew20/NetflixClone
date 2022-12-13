@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import { useSelector } from 'react-redux';
 import { selectUser } from "./features/userSlice"
 import { loadStripe } from "@stripe/stripe-js";
@@ -76,6 +76,7 @@ function Plans() {
 
     return (
         <div className='plans'>
+            {subscription && <p className='plans__renewal'>Renewal Date: {new Date(subscription?.current_period_end * 1000).toLocaleDateString()}</p>}
             {Object.entries(products).map(([productId, productData]) => {
 
                 const isCurrentPackage = productData.name?.toLowerCase().includes(subscription?.role);

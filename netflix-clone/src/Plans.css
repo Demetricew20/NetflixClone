@@ -5,6 +5,12 @@
     opacity: .8;
 }
 
+.plans__renewal {
+    margin-top: .75rem;
+    font-style: italic;
+    font-size: 14px;
+}
+
 .plans__subscriptions:hover{
     opacity: 1;
 }
