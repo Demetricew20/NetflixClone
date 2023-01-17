@@ -9,3 +9,6 @@ Project includes:
 - Google Authentication
 - Stripe
 - Movie DB (data)
+
+
+View Project here - <a href="https://netflix-clone-fd696.web.app/" target="_blank">Netflix</a>
